@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5.20833in" height="5.20833in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5208.33 5208.33"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="722" font-variant="normal" class="str0" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="H" horiz-adv-x="722" d="M72.9999 0l0 716 145 0 0 -282 281.999 0 0 282 145 0 0 -716 -145 0 0 313 -281.999 0 0 -313 -145 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str0 {stroke-width:49.91;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313}
+    .str1 {stroke:#05FCD3;stroke-width:166.67;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313}
+    .str2 {stroke:#05FCD3;stroke-width:6.94;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313}
+    .fil2 {fill:#05FCD3}
+    .fil0 {fill:#05FCD3}
+    .fil1 {fill:#05FCD3;fill-rule:nonzero}
+    .fnt0 {font-weight:bold;font-size:3339.61px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2014712788352">
+   <text x="308.88" y="3600.57"  class="fil0 str1 fnt0">H</text>
+   <path class="fil1 str1" d="M4347.97 3289.43c118,85.16 119.67,100.75 258.82,150.84l-0.09 394.64c-296.8,-89.04 -321.72,-124.23 -584.34,-302.24 -156.4,68.46 -330.06,102.97 -520.42,102.97 -367.36,0 -655.68,-108.54 -863.85,-325.06 -208.17,-217.07 -312.25,-521.54 -312.25,-913.94 0,-391.29 104.64,-695.75 313.37,-912.83 208.72,-217.63 492.04,-326.17 849.37,-326.17 354.56,0 635.64,108.54 843.25,326.17 207.61,217.07 311.7,520.98 311.7,912.27 0,206.5 -28.94,388.51 -86.83,545.47 -43.42,119.67 -112.99,236 -208.73,347.87zm-202.05 -892.79c0,-276.63 -60.67,-483.13 -182.57,-620.05 -121.89,-136.37 -281.08,-204.83 -477.56,-204.83 -197.04,0 -356.79,68.46 -478.68,205.94 -122.45,137.48 -183.68,343.98 -183.68,620.06 0,279.97 61.22,489.81 183.68,628.41 122.45,139.15 277.59,196.52 464.21,208.72 197.31,12.91 365.11,-87.37 478.87,-213.94 154.7,-172.14 195.73,-398.69 195.73,-624.3z"/>
+   <circle class="fil2 str2" cx="3496.24" cy="2723.79" r="279.67"/>
+  </g>
+ </g>
+</svg>
