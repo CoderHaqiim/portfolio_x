@@ -1,0 +1,27 @@
+{
+  "name": "portfolio_x",
+  "version": "1.0.0",
+  "description": "A continuous portfolio project by devHQ (Jayeola Abdulhakeem)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "developer's",
+    "portfolio",
+    "frontend",
+    "backend",
+    "developer",
+    "programmer",
+    "web",
+    "development",
+    "web",
+    "web",
+    "developer",
+    "ui",
+    "design"
+  ],
+  "author": "devHQ, (Jayeola Adbulhakeem)",
+  "license": "ISC"
+}

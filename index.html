@@ -7,39 +7,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/logo2.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A developer's portfolio">
-    <title>devHQ_portfolio</title>
+    <title>Haqiim | portfolio_x</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo.svg" alt="">
+    <audio id="pop" src="assets/happy-pop-2-185287.mp3"></audio>
+    <canvas id="myCanvas"></canvas>
+    <div id="cover">
+        <div class="codal"></div>
+        <div id="modal">
+            <button id = "close1" class="close">
+                <img src="assets/close_icon.svg" alt="">
+            </button>
+            <div id="personal">
+                <div id="profile_picture">
+                    <img src="assets/akeem.jpg" alt="devHQ">
+                </div>
             </div>
+            <div id="information">
+                <h1 id="name">Jayeola Abdulhakeem</h1>
+                <h2 id="role">Frontend Developer</h2>
+            </div>
+            <p id="description">
+                I am a passionate frontend developer with love for learning new things and a flair
+                for art and design.
+                <br/><br/> 
+                I find programming to be magical; how it enables me to conjure
+                objects from nothing and manipulate them on the screen to do exactly what I want them to.
+                <br/><br/>
+                I am currently on a journey to become a full-stack web developer.
+                <br/><br/>
+                I am open to collaborations
+                on innovative projects, and would also love to be on your web development team.
+                <br/><br/>
+                My current technology stack:<br><br>
+                <strong>Html, CSS, Tailwind CSS, React js, Node, Express, MongoDB.</strong>
+            </p>
+        </div>
+    </div>
+    <div id="animator"></div>
+    <nav>
+        <div id="version">
+            <div id="v">v 1.0.0</div>
+        </div>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="">
+            </a>
             <div class="nav-items">
-                <button class="resume">Resume</button>
+                <a href="assets/Jayeola_Abdulhakeem_resume.pdf" target="_blank">
+                    <button class="resume">Resume</button>
+                </a>
+                <div id="profile">
+                    <img src="assets/akeem.jpg" alt="profilephoto">
+                </div>
             </div>
         </div>
     </nav>
     <main>
         <section id="section1">
+            <div id="background">
+                <div id="worm">
+                    <div class="eyes">
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                    <div id="mouth"></div>
+                </div>
+            </div>
             <div class="container">
                 <div class="col1_1">
-                    <h1 id="text">
-                        <span id="welcome">Welcome to my portfolio!</span><br>
-                        I am Haqiim<br>
-                        <span id="large_text">Frontend Developer,</span><br>
-                        showcasing my work and journey through creativity.
-                    </h1>
-                    <button>About me</button>
+                    <p id="text">
+                        <span id="span1">Welcome to my portfolio<span id="excl">!</span>
+                        <p id="text1">I am Haqiim, a <span id="bold">frontend developer</span> showcasing my works and journey through creativity</p>
+                    </p>
+                    <button id="about">About me</button>
                 </div>
                 <div class="col2_1">
-                    <div class="img2">
-                        <img src="assets/logo3.svg" alt="">
+                    <div id="divide"></div>
+                    <div class="plot">
+                        <div class="cube">
+                            <div class="face face1">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                            <div class="face face2">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                            <div class="face face3">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                            <div class="face face4">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                            <div class="face face5">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                            <div class="face face6">
+                                <img src="assets/logo3.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -53,232 +130,252 @@
                             <span class="num">01</span>
                         </div>
                     </div>
-                    <h2>Here are some of the projects that I have done</h2>
+                    <p>Here are a variety of cool projects I’ve been working on.</p>
                 </header>
-                <div class="projects">
-                    <div class="project" id="project1">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                            <img src="assets/ecommercewwebsite.png" alt="">
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project" id="project2">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                            <img src="assets/musicplayer.png" alt="">
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project" id="project3">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                            <img src="assets/ecommercepage.png" alt="">
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project" id="project4">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project" id="project5">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project" id="project6">
-                        <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <a id="open">see more</a>
-                </div>
-            </div>
+                <div class="projects"> </div>
         </section>
         <section id="section3">
             <div class="container">
                 <header>
                     <div class="header">
-                        <h1>Skills & Technologies</h1>
+                        <h1>My toolbox</h1>
                         <div class ="number">
                             <span class="num">02</span>
                         </div>
                     </div>
-                    <h2>Here are some of the projects that I have done</h2>
+                    <p>Here are some of the projects that I have done</p>
                 </header>
-                <ul class="skills">
-                    <li>
-                        <h3 class="list">Frontend:</h3>
-                        <ul class="frontend">
-                            <li class="skill">Html</li>
-                            <li class="skill">Css</li>
-                            <li class="skill">Tailwind css</li>
-                            <li class="skill">Bootstrap</li>
-                            <li class="skill">Javascript</li>
-                            <li class="skill">Jquery</li>
-                            <li class="skill">React</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="list">Backend:</h3>
-                        <ul class="backend">
-                            <li class="skill">Node</li>
-                            <li class="skill">Express</li>
-                            <li class="skill">MySql</li>
-                            <li class="skill">MongoDB</li>
-                            <li class="skill">Mongoose</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3 class="list">General Development:</h3>
-                        <ul class="general">
-                            <li class="skill">Git</li>
-                            <li class="skill">Github</li>
-                            <li class="skill">Netlify</li>
-                            <li class="skill">Cli</li>
-                            <li class="skill">NPM</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="skillful">
+                    <ul class="skills">
+                        <li>
+                            <h2 class="list">Frontend</h2>
+                            <ul class="frontend">
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/html_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Html</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/css_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Css</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/tailwind_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Tailwind css</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/html_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Bootstrap</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/javascript_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Javascript</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/jquery_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Jquery</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/react_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>React</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 class="list">Backend</h2>
+                            <ul class="backend">
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/node_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Node</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/express_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Express</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/mysql_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>MySql</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/mongodb_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>MongoDB</span>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/mongodb_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Mongoose</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 class="list">General Development</h2>
+                            <ul class="general">
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/git_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Git</span></li>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/github_x2.svg" alt="html_icon">
+                                    </span>
+                                    <span>Github</span></li>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/netlify_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Netlify</span></li>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/cli_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>Cli</span></li>
+                                </li>
+                                <li class="skill">
+                                    <span class="icons">
+                                        <img src="assets/npm_x.svg" alt="html_icon">
+                                    </span>
+                                    <span>NPM</span></li>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="particles">
+                        <!-- <canvas id="canvas2"></canvas> -->
+                         <img src="assets/logo.svg" alt="logo">
+                    </div>
+                </div>
             </div>
         </section>
         <section id="section4">
             <div class="container">
                 <header>
                     <div class="header">
-                        <h1>Contact Me</h1>
+                        <h1>Get in touch</h1>
                         <div class ="number">
                             <span class="num">03</span>
                         </div>
                     </div>
-                    <h2>Kindly leave a message for me in the form below.</h2>
+                    <p>Kindly leave a message for me in the form below.</p>
                 </header>
                 <div class="contact">
-                    <ul class="socials">
-                        <li class="social_media" id="github">
-                            <span class="small_icon">
-                                <img src="assets/github_x2.svg" alt="">
-                            </span>
-                            <span id="line"> github</span>
-                            @coderHaqiim
-                        </li>
-                        <li class="social_media" id="linkedin">
-                            <span class="small_icon">
-                                <img src="assets/linkedin_x.svg" alt="">
-                            </span>
-                            <span id="line">linkedin</span>
-                            @Jayeola Abdulhakeem
-                        </li>
-                        <li class="social_media" id="facebook">
-                            <span class="small_icon">
-                                <img src="assets/facebook_x.svg" alt="">
-                            </span>
-                            <span id="line">facebook</span>
-                            @Jaye Haqiim
-                        </li>
-                        <li class="social_media" id="x">
-                            <span class="small_icon">
-                                <img src="assets/twitter_x.svg" alt="">
-                            </span>
-                            <span id="line">twitter</span>
-                            @Haqiim2
-                        </li>
-                        <li class="social_media" id="instagram">
-                            <span class="small_icon">
-                                <img src="assets/instagram_x.svg" alt="">
-                            </span>
-                            <span id="line">instagram</span>
-                            @hq_haqiim
-                        </li>
-                    </ul>
                     <form action="">
                         <div class="chat">
                             <img src="assets/message2.svg" alt="">
                         </div>
+                        <h2 id="message-head">Leave me a message!</h2>
                         <div class="input">
                             <label for="name">name</label>
-                            <input type="text" placeholder="Please enter your name" name="name" required>
+                            <input type="text" id="sender" placeholder="Please enter your name" name="name" required>
                         </div>
                         <div class="input">
-                            <label for="name">email</label>
-                            <input type="text" placeholder="Please enter your name" name="email" required>
+                            <label for="email">email</label>
+                            <input type="text" id="email" placeholder="Please enter your email" name="email" required>
                         </div>
                         <div class="input">
-                            <label for="message">Leave a message</label>
-                            <textarea name="message" id="" cols="30" rows="10">Hello Haqiim!</textarea>
+                            <label for="message">your message</label>
+                            <textarea name="message" placeholder="Hello Haqiim" id="message" cols="30" rows="10" required> </textarea>
                         </div>
-                        <div>
-                            <input id="submit" type="submit" value="Send">
+                        <div id="submit_btn">
+                            <button type="submit" id="submit">
+                                <span>send</span>
+                            </button>
                         </div>
                     </form>
+                    <div id="socials-content">
+                        <h2 id="hero">
+                            <span>Let's be friends</span>
+                            <span id="handshake">
+                                <img src="assets/handshake.svg" alt="">
+                            </span>
+                        </h2>
+                        <ul class="socials">
+                            <a href="https://github.com/CoderHaqiim" target="_blank">
+                                <li class="social_media" id="github">
+                                    <span class="small_icon">
+                                        <img src="assets/github_x2.svg" alt="">
+                                    </span>
+                                    <span id="line"> github</span>
+                                    coderHaqiim
+                                </li>
+                            </a>
+                            <a href="https://www.linkedin.com/in/abdulhakeem-jayeola-62b72896" target="_blank">
+                                <li class="social_media" id="linkedin">
+                                    <span class="small_icon">
+                                        <img src="assets/linkedin_x.svg" alt="">
+                                    </span>
+                                    <span id="line">linkedin</span>
+                                    Jayeola Abdulhakeem
+                                </li>
+                            </a>
+                            <a href="https://web.facebook.com/thomas.jaye.31" target="_blank">
+                                <li class="social_media" id="facebook">
+                                    <span class="small_icon">
+                                        <img src="assets/facebook_x.svg" alt="">
+                                    </span>
+                                    <span id="line">facebook</span>
+                                    Jaye Haqiim
+                                </li>
+                            </a>
+                            <a href="https://twitter.com/Haqiim2/" target="_blank">
+                                <li class="social_media" id="x">
+                                    <span class="small_icon">
+                                        <img src="assets/twitter_x.svg" alt="">
+                                    </span>
+                                    <span id="line">twitter</span>
+                                    Haqiim2
+                                </li>
+                            </a>
+                            <a href="https://www.instagram.com/_haqiim/" target="_blank">
+                                <li class="social_media" id="instagram">
+                                    <span class="small_icon">
+                                        <img src="assets/instagram_x.svg" alt="">
+                                    </span>
+                                    <span id="line">instagram</span>
+                                    hq_haqiim
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
+            <div id="swap">
+                <span id="tag">devHQ | portfolio_x v0.0.1</span>
+                <span>&copy; 2024 Jaye Haqiim</span>
+            </div>
+            <span>designed and developed by Jaye Haqiim</span>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/script.js" type="module"></script>
+    <script src="scripts/background.js" type="module"></script>
+    <script src="scripts/canvas.js" type="module"></script>
 </body>
 </html>
