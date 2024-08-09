@@ -787,6 +787,7 @@ section{
     background-color: var(--light);
     width:100%;
     height:auto;
+    overflow-x:hidden;
     position:relative;
 }
 
