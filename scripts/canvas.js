@@ -5,7 +5,6 @@ const buttons = document.querySelectorAll('button')
 canvas.height = innerHeight
 canvas.width = innerWidth
 const particlesArray = []
-let hue = 0
 
 window.addEventListener('resize',()=>{
     canvas.height = innerHeight
@@ -21,7 +20,7 @@ window.addEventListener('mousemove',(e)=>{
     mouse.x = e.x
     mouse.y = e.y
     for(let i = 0; i < 10; i++){
-        particlesArray.push(new Particle(5))
+        particlesArray.push(new Particle(4))
     }
 })
 
@@ -42,13 +41,12 @@ class Pointer{
 class Particle {
     #ctx = ctx
     constructor(size){
-        this.hue = 0
         this.x = mouse.x
         this.y = mouse.y
         this.movementX = Math.random()*7 - 3.5
         this.movementY = Math.random()*7 - 3.5
         this.size = size
-        this.color = `hsl(${hue},100%,50%)`
+        this.color = `#2270ca`
     }
 
     draw(){
@@ -65,7 +63,6 @@ class Particle {
 }
 
 function animate(){
-    hue += 10
     ctx.clearRect(0,0,canvas.width, canvas.height)
     let pointer = new Pointer()
     pointer.draw()

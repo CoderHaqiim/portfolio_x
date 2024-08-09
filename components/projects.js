@@ -30,9 +30,6 @@ function Project(project){
     return(
         `<div onclick = "showModal(event)" class="project project${project.id+1}" id="${project.id}">
                         <div class="image_icon">
-                            <div id="info">
-                                <img src="assets/info1.svg" alt="">
-                            </div>
                             <img src= ${project.imgurl} alt="">
                         </div>
                     </div>`
