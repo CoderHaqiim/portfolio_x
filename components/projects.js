@@ -2,12 +2,11 @@ import Modal2 from './modal.js'
 import {projects as myProjects, icons as myIcons} from './db.js'
 
 function Project(project){
-    
     const skillMap = (id) => {
         const technologies = myProjects[id].technologies
         let tech = ' '
             technologies.forEach(item =>{
-                    tech += `<li class="skill">
+                    tech += `<li class="skill2">
                         <span class="icons">
                             <img src= ${item.img} alt="html_icon"></img>
                         </span>

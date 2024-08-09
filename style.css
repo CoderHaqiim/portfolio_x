@@ -734,7 +734,7 @@ header{
     background-color:transparent;
     padding: 2px;
 }
-.skill{    
+.skill,.skill2{    
     height:auto;
     padding:6px 12px;
     border-radius: 20px;
@@ -748,6 +748,10 @@ header{
     align-items: center;
     width: auto;
     font-weight:500;
+}
+.skill2{
+    opacity:1;
+    transform:scale(1);
 }
 .icons{
     border:1px solid var(--color4);
