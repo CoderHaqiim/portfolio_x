@@ -4,77 +4,82 @@ const projects = [
         description:'A music player application built with Html, Css and javascript. Application has basic media player functionalities including playing modes and shuffle.',
         technologies:[
             {
-                name: 'html', img:'assets/html_x.svg'
+                name: 'html', img:'assets/svgs/html_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/javascript_x.svg'
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
             }
         ],
-        imgurl:'assets/musicplayer.png',
-        url:'',
+        imgUrl:'assets/images/player.png',
+        liveUrl:'',
         githubUrl:'',
         id: 0
     },
     {
-        name:'easyshop',
-        description:'An ecommerce website ui build with react, tailwindcss, css and swiper.js',
+        name:'space tourism website',
+        description:`A frontendmentors intermediate challenge built with react, tailwind-css and css.
+                Website is fully responsive with functionalities including navigation, conditional rendering etc. `,
         technologies:[
             {
-                name: 'react', img:'assets/react_x.svg'
+                name: 'react', img:'assets/svgs/react_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:'tailwind', img:'assets/tailwind_x.svg'
-            },
-            {
-                name:"swiper", img:'assets/swiper_x.svg'
+                name:'tailwind', img:'assets/svgs/tailwind_x.svg'
             }
         ],
-        imgurl:'assets/ecommercewebsite.png',
-        url:'',
+        imgUrl:'assets/images/space_tourism.png',
+        liveUrl:'',
         githubUrl:'',
         id: 1
     },
     {
-        name:'e commerce page',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias tenetur ullam nemo',
+        name:'e-commerce-website',
+        description:`An ecommerce website ui built with react, tailwind-css, css and swiper.js.
+                     Website is fully responsive with functionalities including a cart, reusable cards, items filter etc`,
         technologies:[
             {
-                name: 'html', img:'assets/html_x.svg'
+                name: 'react', img:'assets/svgs/react_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/javascript_x.svg'
+                name:'tailwind', img:'assets/svgs/tailwind_x.svg'
+            },
+            {
+                name:"swiper", img:'assets/svgs/swiper_x.svg'
+            },
+            {
+                name:"react-router", img:'assets/svgs/swiper_x.svg'
             }
         ],
-        imgurl:'assets/ecommercepage.png',
-        url:'',
+        imgUrl:'assets/images/e-commerce.png',
+        liveUrl:'',
         githubUrl:'',
         id: 2
     },
     {
         name:'portfolio_x',
-        description:'A continuous portfolio project by devHQ (Jayeola Abdulhakeem). This is portolio_x v0.01',
+        description:'A continuous portfolio project by coderHaqiim (Jayeola Abdulhakeem). This is portfolio_x v0.01',
         technologies:[
             {
-                name: 'html', img:'assets/html_x.svg'
+                name: 'html', img:'assets/svgs/html_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/javascript_x.svg'
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
             }
         ],
-        imgurl:'assets/musicplayer.png',
-        url:'',
+        imgUrl:'assets/images/portfolio.png',
+        liveUrl:'https://haqiim-portfolio-x.netlify.app',
         githubUrl:'',
         id: 3
     },
@@ -83,17 +88,17 @@ const projects = [
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias tenetur ullam nemo',
         technologies:[
             {
-                name: 'html', img:'assets/html_x.svg'
+                name: 'html', img:'assets/svgs/html_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/javascript_x.svg'
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
             }
         ],
-        imgurl:'assets/musicplayer.png',
-        url:'',
+        imgUrl:'assets/images/musicplayer.png',
+        liveUrl:'',
         githubUrl:'',
         id: 4
     },
@@ -102,33 +107,33 @@ const projects = [
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias tenetur ullam nemo',
         technologies:[
             {
-                name: 'html', img:'assets/html_x.svg'
+                name: 'html', img:'assets/svgs/html_x.svg'
             },
             {
-                name:'css', img:'assets/css_x.svg'
+                name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/javascript_x.svg'
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
             }
         ],
-        imgurl:'assets/musicplayer.png',
-        url:'',
+        imgUrl:'assets/images/musicplayer.png',
+        liveUrl:'',
         githubUrl:'',
         id: 5
     }
 ]
 
 const icons = {
-    reactUrl:'assets/react_x.svg',
-    javascriptUrl:'assets/javascript_x.svg',
-    cssUrl:'assets/css_x.svg',
-    tailwindUrl:'assets/tailwind_x.svg',
-    swiperUrl:'assets/swiper_x.svg',
-    htmlUrl:'assets/html_x.svg',
-    mongodbUrl:'assets/mongodb_x.svg',
-    expressUrl:'assets/express_x.svg',
-    mysqlUrl:'assets/mysql_x.svg',
-    nodeUrl:'assets/node_x.svg',
+    reactUrl:'assets/svgs/react_x.svg',
+    javascriptUrl:'assets/svgs/javascript_x.svg',
+    cssUrl:'assets/svgs/css_x.svg',
+    tailwindUrl:'assets/svgs/tailwind_x.svg',
+    swiperUrl:'assets/svgs/swiper_x.svg',
+    htmlUrl:'assets/svgs/html_x.svg',
+    mongodbUrl:'assets/svgs/mongodb_x.svg',
+    expressUrl:'assets/svgs/express_x.svg',
+    mysqlUrl:'assets/svgs/mysql_x.svg',
+    nodeUrl:'assets/svgs/node_x.svg',
 }
 
 export {projects, icons}

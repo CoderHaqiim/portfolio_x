@@ -24,21 +24,20 @@ const scrollUp = document.querySelector("#scroll-up")
 const scrollDown = document.querySelector("#scroll-down")
 const pagesId = document.querySelectorAll(".pageid")
 const storageItems = [name,email,message]
+const loading = document.querySelector("#loading")
 const storage = window.localStorage
+const body = document.getElementsByTagName('body')[0]
 let hoverCube;
-let current = 0
+let current = 0;
 const headers = [header1,header2,header3]
-
-
 
 function loopLocation(direction){
     const locations = ["#section1","#section2","#section3","#section4"]
-
     if(direction == "scrolling-down"){
-        if(current < 3){
+        if(current < 3 && current !== 3 ){
             current++
         }else{
-            return
+            current = 3
         }
     }else{
         if(current !== 0){
@@ -48,11 +47,28 @@ function loopLocation(direction){
         }
     }
 
-    let location = locations[current]
-    scrollDown.href = location
-    scrollUp.href = location
+    let currentPage = locations[current]
+    scrollDown.href = currentPage
+    scrollUp.href = currentPage
     console.log(current)
 }
+
+pagesId.forEach(id =>{
+    id.onclick = () =>{
+        if(id.id == "toHome"){
+            current = 0
+        }
+        else if(id.id == "toProjects"){
+            current = 1
+        }
+        else if(id.id == "toSkills"){
+            current = 2
+        }
+        else{
+            current = 3
+        }
+    }
+})
 
 
 scrollDown.onclick = () =>{
@@ -62,12 +78,20 @@ scrollUp.onclick = () =>{
     loopLocation('scrolling-up')
 }
 
-
-console.log(scrollUp)
 onload = () =>{
     storageItems.forEach(item =>{
         setStorage(item)
         getStorage(item,item.id)
+    })
+
+    const loadPromise = new Promise((resolve) => {
+        setTimeout(()=>{
+           resolve(
+                loading.style.opacity = "0"
+           )
+        },3000)
+    }).then(()=>{
+        loading.style.display = "none"
     })
 }
 
@@ -113,37 +137,24 @@ function populateProjects(){
 
 function showCover(){
     cover.style.display = 'flex'
+    body.style.overflowY = 'hidden'
     setTimeout(()=>{
          modal.style.display = 'flex'
     },200)
 }
 
-pagesId.forEach(id =>{
-    id.onclick = () =>{
-        if(id.id == "toHome"){
-            current = 0
-        }
-        else if(id.id == "toProjects"){
-            current = 1
-        }
-        else if(id.id == "toSkills"){
-            current = 2
-        }
-        else{
-            current = 3
-        }
-    }
-})
 function showProfile(){
     profile.addEventListener('click',()=>{
         showCover()
     })
 }
+
 function showAbout(){
     about_btn.addEventListener('click',()=>{
         showCover()
     })
 }
+
 function buttonHoverAnimation(){
     btns.forEach(btn =>{
         btn.addEventListener('mouseenter',(e)=>{
@@ -176,9 +187,11 @@ closebtn.addEventListener('click',()=>{
     setTimeout(()=>{
         cover.style.display = 'none'
     },200)
+    body.style.overflowY = 'scroll'
     modal && (modal.style.display = 'none')
 })
-function leftRight(bottom,element,height){
+
+function slideRightEffect(bottom,element,height){
     if(bottom < (height - 50)){
         element.style.opacity ='1'
         element.style.transform = 'translateX(0px)'
@@ -188,7 +201,7 @@ function leftRight(bottom,element,height){
     }
 }
 
-function scaleUp(bottom,element,height){
+function scaleUpEffect(bottom,element,height){
     if(bottom < (height - 70)){
         element.style.opacity ='1'
         element.style.transform = 'scale(1)'
@@ -211,11 +224,11 @@ function observer(element,func){
 }
 
 headers.forEach(header =>{
-    observer(header,leftRight)
+    observer(header,slideRightEffect)
 })
 
 skills.forEach(skill=>{
-    observer(skill,scaleUp)
+    observer(skill,scaleUpEffect)
 })
 
 buttonHoverAnimation()

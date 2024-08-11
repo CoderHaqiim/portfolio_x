@@ -1,5 +1,6 @@
 import Modal2 from './modal.js'
 import {projects as myProjects, icons as myIcons} from './db.js'
+const body = document.getElementsByTagName("body")[0]
 
 function Project(project){
     const skillMap = (id) => {
@@ -19,6 +20,7 @@ function Project(project){
     const showModal = (event) =>{
         const codal = document.querySelector('.codal')
         let id = event.target.id
+        body.style.overflowY= 'hidden'
         cover.style.display = 'flex'
         setTimeout(()=>{
             codal.innerHTML += Modal2(id,myProjects,skillMap)
@@ -28,9 +30,7 @@ function Project(project){
 
     return(
         `<div onclick = "showModal(event)" class="project project${project.id+1}" id="${project.id}">
-                        <div class="image_icon">
-                            <img src= ${project.imgurl} alt="">
-                        </div>
+                        <div class="image_icon" style="background-image:url(${project.imgUrl})"> </div>
                     </div>`
     )
 }

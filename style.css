@@ -34,6 +34,44 @@ html{
 --accent: #e8a839;
 --accent2:#dc900c41;
 --accent_l:#e8a83941; */
+
+#loading{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    background-color:var(--light);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    top:0px;
+    left:0px;
+    z-index:30;
+    transition:2s;
+}
+#loadAnim{
+    width:104px;
+    height:104px;
+    background:linear-gradient(#cead09,#e71953,#008069,#e77d19);
+    border-radius: 50%;
+    display: flex;
+    position:absolute;
+    justify-content:center;
+    align-items: center;
+    animation: rotateon 1s linear infinite forwards;
+}
+#loading2{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    padding:10px;
+    padding-top: 12px;
+    background-color:var(--light);
+}
+
 #handshake{
     width:40px;
     height: 40px;
@@ -63,6 +101,7 @@ html{
     align-items: center;
     z-index:2;
     position: absolute;
+    opacity:1;
 }
 #load{
     width:40px;
@@ -296,7 +335,7 @@ button{
     max-width:1100px;
     margin:auto;
     position: relative;
-    padding:50px 10px;
+    padding:40px 10px;
 }
 .plot {
     width: 200px;
@@ -521,7 +560,7 @@ header{
     justify-content: center;
     background-color:#0000007c;
     color:var(--light);
-    font-weight:900;
+    font-weight:700;
     top:0px;
     font-size:1.2rem;
     left:0px;
@@ -534,14 +573,14 @@ header{
     content:'music player'
 }
 .project2::after{
-    content:'easyshop'
+    content:'space_tourism'
 }
 .project3::after{
-    content:'e commerce page'
+    content:'e commerce website'
 }
-
-
-
+.project4::after{
+    content:'portfolio-x'
+}
 
 .image_icon{
     width:100%;
@@ -553,6 +592,10 @@ header{
     align-items: center;
     border:solid 1.5px var(--light3);
     pointer-events: none;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y:center;
+    background-size:cover;
 }
 .image_icon img{
     border-radius:inherit;
@@ -625,6 +668,10 @@ header{
     align-items: center;
     animation:drop .5s linear forwards;
     box-shadow:0px 0px 3px -1px;
+}
+.hd{
+    font-weight:500;
+    font-size:1.2rem;
 }
 #name{
     font-size:1.5rem;
@@ -1111,6 +1158,89 @@ iframe{
     .contact{
         flex-direction:row;
     }
+    #modal{
+        padding: 35px 20px 30px 20px
+    }
+    .modal2{
+        width:90%;
+        max-width:700px;
+        height:500px;
+        border-radius:20px;
+        background-color: var(--light);
+        box-shadow:0px 0px 3px -1px;
+        display:flex;
+        padding:30px;
+        padding-top:60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        animation:drop .5s linear forwards;
+    }
+    .modal2 ul{
+        width:auto;
+        display:flex;
+    }
+    .frame{
+        width:250px;
+        border-radius: 15px;
+        aspect-ratio:16/9;
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        position: relative;
+        background-color: var(--light2);
+    }
+    iframe{
+        transform:scale(0.25);
+        aspect-ratio:16/9;
+        border-radius: inherit;
+        width:400%;
+        height: 400%;
+    }
+    .content{
+        width:100%;
+        height:100%;
+        border-radius: inherit;
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .description{
+        width:100%;
+        height:auto;
+        display: flex;
+        flex-direction: row;
+        gap:40px;
+    }
+ 
+    .abt_project{
+        flex: 1;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight:900;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .plot {
         width: 250px;
         height: 250px;
@@ -1150,9 +1280,6 @@ iframe{
     #description{
         width:350px;
         font-size: 15px;
-    }
-    #modal{
-        padding: 35px 20px 30px 20px
     }
     .projects{
         gap:20px;
@@ -1195,9 +1322,12 @@ iframe{
          top:30px;
         left:30px;
     }
+    #text1{
+        max-width:450px;
+    }
     .pageid{
-        width:6px;
-        height:6px;
+        width:8px;
+        height:8px;
         border-radius:50%;
         background-color:var(--color5);
         transition:0.5s;
@@ -1209,6 +1339,42 @@ iframe{
     .pageid:hover, .scroll-cl:hover{
         transform:scale(1.5);
     }
+
+    .pageid::after{
+        content:"";
+        width:auto;
+        height:auto;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        border-radius: 5px;
+        border:solid 1px var(--light);
+        background-color:var(--color5);
+        position: absolute;
+        right:18px;
+        top:calc(height/2);
+        font-size:0.5rem;
+        color:var(--light);
+        text-wrap:nowrap;
+    }
+
+    .pageid:hover::after{
+        display:flex;
+    }
+    #toHome::after{
+        content: "home";
+    }
+    #toProjects::after{
+        content:'projects'
+    }
+    #toSkills::after{
+        content:'technology stack'
+    }
+    #toContact::after{
+        content:'contact'
+    }
+
     .scroll-cl{
         width:30px;
         height:30px;
@@ -1283,67 +1449,6 @@ iframe{
         font-weight: 900;
         font-size:2rem;
     }
-    .modal2{
-        width:90%;
-        max-width:700px;
-        height:500px;
-        border-radius:20px;
-        background-color: var(--light);
-        box-shadow:0px 0px 3px -1px;
-        display:flex;
-        padding:30px;
-        padding-top:60px;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        animation:drop .5s linear forwards;
-    }
-    .modal2 ul{
-        width:auto;
-        display:flex;
-    }
-    .frame{
-        width:250px;
-        border-radius: 15px;
-        aspect-ratio:16/9;
-        overflow:hidden;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-        position: relative;
-        background-color: var(--light2);
-    }
-    iframe{
-        transform:scale(0.25);
-        aspect-ratio:16/9;
-        border-radius: inherit;
-        width:400%;
-        height: 400%;
-    }
-    .content{
-        width:100%;
-        height:100%;
-        border-radius: inherit;
-        padding:10px;
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-    }
-    .description{
-        width:100%;
-        height:auto;
-        display: flex;
-        flex-direction: row;
-        gap:40px;
-    }
- 
-    .abt_project{
-        flex: 1;
-    }
-    .title{
-        font-size:1.5rem;
-        font-weight:900;
-    }
     button{
         height:40px;
     }
@@ -1367,13 +1472,15 @@ iframe{
         height:450px;
     }
     .col1_1, .col2_1{
-        width:50%;
+        width:60%;
     }
     .col2_1{
+        width:40%;
         position:relative;
     }
     .col1_1{
-        padding-right:40px;
+        padding-right:50px;
+        padding-left:50px;
         justify-content: flex-end;
     }
     .project{
