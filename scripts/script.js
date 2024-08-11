@@ -89,7 +89,7 @@ onload = () =>{
            resolve(
                 loading.style.opacity = "0"
            )
-        },3000)
+        },10)
     }).then(()=>{
         loading.style.display = "none"
     })
