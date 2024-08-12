@@ -14,7 +14,7 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/player.png',
-        liveUrl:'',
+        liveUrl:'https://haqiim-player-x.netlify.app/',
         githubUrl:'',
         id: 0
     },
@@ -34,12 +34,12 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/space_tourism.png',
-        liveUrl:'',
+        liveUrl:'https://haqiim-space-tourism.netlify.app/',
         githubUrl:'',
         id: 1
     },
     {
-        name:'e-commerce-website',
+        name:'easyshop',
         description:`An ecommerce website ui built with react, tailwind-css, css and swiper.js.
                      Website is fully responsive with functionalities including a cart, reusable cards, items filter etc`,
         technologies:[
@@ -60,7 +60,7 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/e-commerce.png',
-        liveUrl:'',
+        liveUrl:'https://easyshopapp.netlify.app/',
         githubUrl:'',
         id: 2
     },
