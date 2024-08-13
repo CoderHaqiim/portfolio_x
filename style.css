@@ -581,6 +581,9 @@ header{
 .project4::after{
     content:'portfolio-x'
 }
+.project5::after{
+    content:'wetube'
+}
 
 .image_icon{
     width:100%;

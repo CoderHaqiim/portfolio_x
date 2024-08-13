@@ -84,20 +84,20 @@ const projects = [
         id: 3
     },
     {
-        name:'project 5',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias tenetur ullam nemo',
+        name:'wetube',
+        description:'A youtube homepage clone built with react, tailwind css and css',
         technologies:[
             {
-                name: 'html', img:'assets/svgs/html_x.svg'
+                name: 'react', img:'assets/svgs/react_x.svg'
             },
             {
                 name:'css', img:'assets/svgs/css_x.svg'
             },
             {
-                name:"javascript", img:'assets/svgs/javascript_x.svg'
+                name:'tailwind', img:'assets/svgs/tailwind_x.svg'
             }
         ],
-        imgUrl:'assets/images/musicplayer.png',
+        imgUrl:'assets/images/wetube.png',
         liveUrl:'',
         githubUrl:'',
         id: 4
