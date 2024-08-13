@@ -20,7 +20,7 @@ function Modal2(id,myProjects,skillMap){
     window.removeLoadingAnimation = removeLoadingAnimation
 
     return(
-        `   <div class="modal2">
+        `<div class="modal2">
             <button onclick = "closeModal()" class="close">
                 <img src="assets/svgs/close_icon.svg" alt="close button">
             </button>
@@ -48,6 +48,10 @@ function Modal2(id,myProjects,skillMap){
                     <ul id='skilled'>
                         ${skillMap(id)}
                     </ul>
+                </div>
+                <div class="links">
+                    <a class="link" href=${myProjects[id].githubUrl}>github</a>
+                    <a class="link" href=${myProjects[id].liveUrl}>live</a>
                 </div>
             </div>
         </div>`

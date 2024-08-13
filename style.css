@@ -19,9 +19,37 @@
     --x:0px;
     --y:0px;
 }
+.links{
+    width:100%;
+    height: auto;
+    display:flex;
+    justify-content:flex-start;
+    gap:10px;
+    align-items: center;
+    margin-top:20px;
+    padding-top: 10px;
+    border-top:solid 1px var(--light3);
+}
+
+.link:nth-child(1){
+    background-color:var(--light);
+    color:var(--accent);
+}
+.link{
+    background-color:var(--accent);
+    color:var(--light);
+    width:auto;
+    height:35px;
+    border:solid 1px var(--accent);
+    border-radius:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 16px;
+}
 html{
     scroll-behavior: smooth;
-    transition:0.5s;;
+    transition:0.5s;
 }
 
 /* 
@@ -759,31 +787,6 @@ header{
     top:-5px;
     left:-5px;
 }
-
-.links{
-    display:flex;
-    width:100%;
-    height:23%;
-    justify-content:space-between;
-    align-items: center;
-    pointer-events: none;
-
-}
-.link{
-    width:auto;
-    height: 38px;
-    border-radius: 20px;
-    font-weight:700;
-    font-size:0.8rem;
-}
-#to_git{
-    width:38px;
-    height:38px;
-    border-radius: 50%;
-    justify-content:center;
-    background-color:transparent;
-    padding: 2px;
-}
 .skill,.skill2{    
     height:auto;
     padding:6px 12px;
@@ -1167,7 +1170,7 @@ iframe{
     .modal2{
         width:90%;
         max-width:700px;
-        height:500px;
+        height:auto;
         border-radius:20px;
         background-color: var(--light);
         box-shadow:0px 0px 3px -1px;
@@ -1183,8 +1186,11 @@ iframe{
         width:auto;
         display:flex;
     }
+    .links{
+        justify-content:flex-start;
+    }
     .frame{
-        width:250px;
+        width:252px;
         border-radius: 15px;
         aspect-ratio:16/9;
         overflow:hidden;
@@ -1498,25 +1504,6 @@ iframe{
     .project:nth-child(2){
         transform:translateY(0px)
     }
-    
-
-    .links{
-        height:20%;
-        justify-content:space-between;
-        align-items: center;
-    
-    }
-    .link{
-        height: 30px;
-        font-weight:500;
-    }
-    #to_git{
-        width:25px;
-        height:25px;
-    }
-    /* .frontend, .backend,.general{
-        width:500px;
-    } */
     #line{
         font-weight: 700;
     }

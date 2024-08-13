@@ -8,9 +8,6 @@ function Project(project){
         let tech = ' '
             technologies.forEach(item =>{
                     tech += `<li class="skill2">
-                        <span class="icons">
-                            <img src= ${item.img} alt="html_icon"></img>
-                        </span>
                         <span>${item.name}</span>
                     </li>`
         })
