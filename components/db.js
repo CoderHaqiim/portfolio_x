@@ -15,7 +15,7 @@ const projects = [
         ],
         imgUrl:'assets/images/player.png',
         liveUrl:'https://haqiim-player-x.netlify.app/',
-        githubUrl:'',
+        githubUrl:'https://github.com/CoderHaqiim/player_x',
         id: 0
     },
     {
@@ -35,7 +35,7 @@ const projects = [
         ],
         imgUrl:'assets/images/space_tourism.png',
         liveUrl:'https://haqiim-space-tourism.netlify.app/',
-        githubUrl:'',
+        githubUrl:'https://github.com/CoderHaqiim/space-tourism',
         id: 1
     },
     {
@@ -61,7 +61,7 @@ const projects = [
         ],
         imgUrl:'assets/images/e-commerce.png',
         liveUrl:'https://easyshopapp.netlify.app/',
-        githubUrl:'',
+        githubUrl:'https://github.com/CoderHaqiim/e-commerce-website',
         id: 2
     },
     {
@@ -80,7 +80,7 @@ const projects = [
         ],
         imgUrl:'assets/images/portfolio.png',
         liveUrl:'https://haqiim-portfolio-x.netlify.app',
-        githubUrl:'',
+        githubUrl:'https://github.com/CoderHaqiim/portfolio_x',
         id: 3
     },
     {
@@ -98,8 +98,8 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/wetube.png',
-        liveUrl:'',
-        githubUrl:'',
+        liveUrl:'https://wetube-youtube-clone.netlify.app/',
+        githubUrl:'https://github.com/CoderHaqiim/we_tube',
         id: 4
     },
     {
