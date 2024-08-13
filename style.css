@@ -1187,7 +1187,7 @@ iframe{
         display:flex;
     }
     .links{
-        justify-content:flex-start;
+        justify-content:flex-end;
     }
     .frame{
         width:252px;
