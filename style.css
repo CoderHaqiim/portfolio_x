@@ -281,6 +281,7 @@ button{
     background-color: var(--accent);
 }
 #background{
+    display: none;
     width:100%;
     height:100%;
     position:fixed;
@@ -1100,6 +1101,7 @@ iframe{
   #section1 .container{
     justify-content:space-evenly;
     padding-top: 70px;
+    align-items: center;
   }
   input,textarea{
     width:270px;
@@ -1119,18 +1121,27 @@ iframe{
     padding-top:30px;
   }
   .content{
-    gap:10px;
+    gap:5px;
   }
   .description{
     gap:10px;
   }
+  .tiptip{
+    margin-bottom:5px;
+    font-size:1rem;
+  }
   .frame{
-    width:240px;
+    width:200px;
   }
   #modal{
     gap:10px;
     padding: 20px 15px 20px 15px
-   
+  }
+  .skill2{
+    padding: 4px 12px;
+  }
+  .links{
+    margin-top:5px;
   }
   #description{
     max-height:200px;
@@ -1142,6 +1153,9 @@ iframe{
   #background{
     display: none;
   }
+  .title{
+    font-size:1.2rem;
+  }
 }
 @media screen and (min-width:800px){
     .contact{
@@ -1149,6 +1163,9 @@ iframe{
     }
     #modal{
         padding: 35px 20px 30px 20px
+    }
+    #background{
+        display:flex;
     }
     .modal2{
         width:90%;
