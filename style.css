@@ -270,21 +270,6 @@ button{
     animation-name: " ";
     animation-duration:0.2s;
 }
-/* .path{
-    position: absolute;
-    top:-30px;
-    left:0px;
-    height:100px;
-    background-color: var(--light2);
-    width:100%;
-    border-top:solid 5px transparent;
-    border-top-left-radius:50% 40px;
-    border-top-right-radius:20% 20px;
-    animation:rock 3s linear infinite forwards;
-}
-#path1{
-    background-color: var(--light);
-} */
 .curve{
     background-color: var(--light2);
 }
@@ -474,10 +459,9 @@ nav .container{
     align-items: center;
 }
 #section1{
-    height:100vh;
+    height:calc(100vh - 85px);
     max-height:900px;
     min-height:400px;
-    top:-70px;
 }
 #section1 .container{
     height:100%;
