@@ -155,7 +155,6 @@ a{
     top:0px;
     left:0px;
     z-index:20;
-    display: none;
     pointer-events: none;
 }
 #profile{
