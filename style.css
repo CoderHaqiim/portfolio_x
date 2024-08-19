@@ -155,6 +155,7 @@ a{
     top:0px;
     left:0px;
     z-index:20;
+    display: none;
     pointer-events: none;
 }
 #profile{
@@ -469,10 +470,10 @@ nav .container{
     position: relative;
     justify-content:center;
     flex-direction:column-reverse ;
-    padding:70px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     gap:70px;
     pointer-events: none;
-    padding-top:130px;
 }
 section:nth-child(2), section:nth-child(4){
     background-color:var(--light2);
@@ -1099,8 +1100,8 @@ iframe{
     display: none;
   }
   #section1 .container{
-    justify-content:space-evenly;
-    padding-top: 70px;
+    justify-content:center;
+    gap:0px;
     align-items: center;
   }
   input,textarea{
@@ -1231,25 +1232,6 @@ iframe{
         font-size:1.5rem;
         font-weight:900;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .plot {
         width: 250px;
         height: 250px;
@@ -1306,8 +1288,10 @@ iframe{
     #section1 .container{
         display:flex;
         flex-direction:row;
-        justify-content:space-between;
+        justify-content:center;
         align-items:center;
+        padding-top:0px;
+        gap:0px;
     }
    #text1{
         text-align:left;
@@ -1480,11 +1464,11 @@ iframe{
         width:450px;
         height:450px;
     }
-    .col1_1, .col2_1{
-        width:60%;
+    .col1_1{
+        width:52%;
     }
     .col2_1{
-        width:40%;
+        width:48%;
         position:relative;
     }
     .col1_1{
@@ -1551,6 +1535,7 @@ iframe{
     }
     #section1 .container{
         gap:20px;
+        padding:0px 15px;
     }
     #scroll-down{
         transform: rotate(90deg);
