@@ -66,7 +66,7 @@ const projects = [
     },
     {
         name:'portfolio_x',
-        description:'A continuous portfolio project by coderHaqiim (Jayeola Abdulhakeem). This is portfolio_x v0.01',
+        description:'A continuous portfolio project by coderHaqiim (Jayeola Abdulhakeem). This is portfolio_x v1.1.0',
         technologies:[
             {
                 name: 'html', img:'assets/svgs/html_x.svg'

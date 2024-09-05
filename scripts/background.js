@@ -32,7 +32,7 @@ function createBackground(){
         }
         return blocks
     }
-    background.append(createBlocks())
+    background && background.append(createBlocks())
 }
 
 if(innerWidth > 900){
