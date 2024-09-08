@@ -66,6 +66,35 @@ html{
     left:0px;
     z-index:30;
     transition:2s;
+    cursor: pointer;
+}
+.confirm{
+    background-color: var(--light);
+    width:500px;
+    height: auto;
+    top:20px;
+    border-radius:25px;
+    display:flex;
+    gap:20px;
+    position: absolute;
+    border:solid 2px var(--accent);
+    flex-direction: column;
+    padding:20px;
+}
+.confirm p{
+    font-weight: 500;
+    color: var(--accent);
+    font-size:0.9rem;
+}
+#no{
+    background-color: var(--light);
+    color: var(--accent);
+}
+.confirm-btns{
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    gap:7px;
 }
 #loadAnim{
     width:104px;
@@ -73,6 +102,7 @@ html{
     background:linear-gradient(#cead09,#e71953,#008069,#e77d19);
     border-radius: 50%;
     display: flex;
+    margin-bottom:80px;
     position:absolute;
     justify-content:center;
     align-items: center;
@@ -81,6 +111,7 @@ html{
 #loading2{
     width:100px;
     height:100px;
+    margin-bottom:80px;
     border-radius:50%;
     display: flex;
     justify-content: center;
@@ -1720,7 +1751,7 @@ iframe{
         border-bottom-right-radius:50% 50%;
         border-bottom-left-radius:40% 20% ;
         background-color:var(--light2);
-        animation: murf 20s linear infinite alternate;
+        /* animation: murf 20s linear infinite alternate; */
     }
     #socials-content{
         display: flex;
@@ -1846,7 +1877,7 @@ iframe{
         transform:translateX(5px)
     }
 }
-@keyframes murf {
+/* @keyframes murf {
     0%{
         border-top-left-radius:15% 15%;
         border-top-right-radius:40% 40%;
@@ -1892,7 +1923,7 @@ iframe{
         border-bottom-left-radius:20% 20%;
         transform:translateX(0px);
     }
-}
+} */
 
 @keyframes showup{
     to{

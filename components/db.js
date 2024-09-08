@@ -123,17 +123,4 @@ const projects = [
     }
 ]
 
-const icons = {
-    reactUrl:'assets/svgs/react_x.svg',
-    javascriptUrl:'assets/svgs/javascript_x.svg',
-    cssUrl:'assets/svgs/css_x.svg',
-    tailwindUrl:'assets/svgs/tailwind_x.svg',
-    swiperUrl:'assets/svgs/swiper_x.svg',
-    htmlUrl:'assets/svgs/html_x.svg',
-    mongodbUrl:'assets/svgs/mongodb_x.svg',
-    expressUrl:'assets/svgs/express_x.svg',
-    mysqlUrl:'assets/svgs/mysql_x.svg',
-    nodeUrl:'assets/svgs/node_x.svg',
-}
-
-export {projects, icons}
+export {projects}

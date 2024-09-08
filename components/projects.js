@@ -1,5 +1,5 @@
 import Modal2 from './modal.js'
-import {projects as myProjects, icons as myIcons} from './db.js'
+import {projects as myProjects} from './db.js'
 const body = document.getElementsByTagName("body")[0]
 
 function Project(project){
@@ -33,12 +33,3 @@ function Project(project){
 }
 
 export default Project
-
-{/* <div class="links">
-                            <button class="link" id="to_git">
-                                <img src="assets/github_x2.svg" alt="">
-                            </button>
-                            <button class="link" id="to_site">
-                                Go to live site
-                            </button>
-                        </div> */}

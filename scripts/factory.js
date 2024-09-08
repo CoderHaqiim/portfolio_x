@@ -75,3 +75,15 @@
 //         showCover()
 //     })
 // }
+
+// const musicPermission =  confirm("Would you like to enable background music on our website? You can turn it off in the menu.")
+// let soundIsOn = musicPermission
+
+// window.onclick = () =>{
+//     if(soundIsOn){
+//         innerWidth < 800 ? knob.style.animationName = "knobRight": knob.style.animationName = "knobRight2"
+//         hum.play()
+//     } else{
+//           innerWidth < 800? knob.style.animationName = "knobLeft": knob.style.animationName = "knobLeft2"
+//     }
+// }
