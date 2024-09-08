@@ -18,7 +18,7 @@
     --footer-color:#343333;
     --menu-color:#cececa;
 
-    transition:.2s;
+    /* transition:.2s; */
 }
 
 .links{
@@ -65,7 +65,6 @@ html{
     top:0px;
     left:0px;
     z-index:30;
-    transition:2s;
     cursor: pointer;
 }
 .confirm{
