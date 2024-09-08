@@ -253,12 +253,12 @@ function animateCube(){         /*Refs: 404 */
         if(hoverCube == false || hoverCube == undefined ){
             cube.style.animationName = 'rotate2'
             setTimeout(()=>{
-                cube.style.animationName =''
+                cube.style.animation= 'none'
             },6000)
         }else{
             return
         }
-    },10000)
+    },15000)
 }
 //
 

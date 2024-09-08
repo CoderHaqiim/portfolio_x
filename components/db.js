@@ -116,7 +116,7 @@ const projects = [
                 name:"javascript", img:'assets/svgs/javascript_x.svg'
             }
         ],
-        imgUrl:'assets/images/musicplayer.png',
+        imgUrl:'',
         liveUrl:'',
         githubUrl:'',
         id: 5
