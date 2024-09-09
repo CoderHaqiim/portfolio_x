@@ -36,7 +36,7 @@ const stateOne = document.querySelector("#state1")
 const stateTwo = document.querySelector("#state2")
 
 //Working global variables
-let selectedTheme = storage.getItem("selectedTheme")
+let selectedTheme = storage.getItem("selectedTheme") || "light"
 let soundIsOn
 let hoverCube;
 let current = 0;
