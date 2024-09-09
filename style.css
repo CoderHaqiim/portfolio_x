@@ -366,9 +366,6 @@ button{
     background-color:var(light);
     pointer-events: all;
 }
-.plot:hover .cube{
-    animation:rotate .5s linear forwards;
-}
 
 .cube {
     width: 100%;
@@ -1483,6 +1480,9 @@ iframe{
     }
     #myCanvas{
         visibility:visible;
+    }
+    .plot:hover .cube{
+        animation:rotate .5s linear forwards;
     }
     .pageid{
         width:8px;
