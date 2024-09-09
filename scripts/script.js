@@ -32,6 +32,8 @@ const logos = document.querySelectorAll(".logo-img")
 const ray = document.querySelector(".ray")
 const hum = document.querySelector("#hum")
 const soundConfirmBtns = document.querySelectorAll(".tune-toggle")
+const stateOne = document.querySelector("#state1")
+const stateTwo = document.querySelector("#state2")
 
 //Working global variables
 let selectedTheme = storage.getItem("selectedTheme")
@@ -52,14 +54,14 @@ window.onload = () =>{
     })
 }
 
-function setFormInputToStorage(input){          /*Refs: 50 */
+function setFormInputToStorage(input){        
     input.addEventListener('change',()=>{
         const value = input.value
         storage.setItem(input.id,value)
     })
 }
 
-function getFormInputFromStorage(output,input){     /*Refs: 51 */
+function getFormInputFromStorage(output,input){    
     const item = storage.getItem(input)
     output.value = item 
 }
@@ -76,7 +78,7 @@ const myThemes= {
         "--accent": "#2270ca",
         "--accent2":"#76b3f9a5",
         "--footer-color":"#343333",
-        "--menu-color":"#cececa"
+        "--menu-color":"#f4f4ef"
     },
     dark:{
         "--light":"#060625",
@@ -90,21 +92,21 @@ const myThemes= {
     }
 }
 
-function makeLightTheme (){     /*Refs: 112, 119 */
+function makeLightTheme (){     
     selectedTheme = "light"
     cloud.style.animationName = "half-moon"
     innerWidth < 800 ? ray.style.animationName = "dim" : ray.style.animationName = "dim2"
     changeTheme(selectedTheme)
 }
 
-function makeDarkTheme (){           /*Refs: 110, 119 */
+function makeDarkTheme (){           
     cloud.style.animationName = "full-moon"
     innerWidth < 800 ? ray.style.animationName = "shine" : ray.style.animationName = "shine2"
     selectedTheme = "dark"
     changeTheme(selectedTheme)
 }
 
-function themeToggleAnimation(){         /*Refs: 402 */
+function themeToggleAnimation(){       
     moon.onclick = () =>{
         if(selectedTheme === "light"){
            makeDarkTheme()
@@ -115,22 +117,22 @@ function themeToggleAnimation(){         /*Refs: 402 */
     }
 }
 
-function implementThemeOnLoad(){         /*Refs: 401 */
+function implementThemeOnLoad(){        
     selectedTheme === "light"? makeLightTheme() : makeDarkTheme()
 }
 
-function setVariableTemplate(item1, item2){     /*Refs: 129*/
+function setVariableTemplate(item1, item2){   
     const root = document.documentElement
     root.style.setProperty(item1,item2)
 } 
 
-function assignCssVariableToRoot(theme){        /*Refs: 148, 152, 156*/
+function assignCssVariableToRoot(theme){        
     Object.entries(theme).forEach(([key,value])=>{
         setVariableTemplate(key,value)
     })
 }
 
-function changeLogoTheme(){         /*Refs: 149, 153 */
+function changeLogoTheme(){         
     if(selectedTheme === "light"){
         logos.forEach(logo =>{
             logo.style.filter = "grayscale(0%) brightness(100%)"
@@ -142,15 +144,17 @@ function changeLogoTheme(){         /*Refs: 149, 153 */
     }
 }
 
-function changeTheme(){             /*Refs: 97, 104 */
+function changeTheme(){         
     switch(selectedTheme){
         case "light" : (()=>{
             assignCssVariableToRoot(myThemes.light)
             changeLogoTheme()
+            stateOne.innerText = selectedTheme
         })(); break;
         case "dark" : (()=>{
             assignCssVariableToRoot(myThemes.dark)
             changeLogoTheme()
+            stateOne.innerText = selectedTheme
         })(); break;
         default: (()=>{
             assignCssVariableToRoot(myThemes.light)
@@ -161,7 +165,7 @@ function changeTheme(){             /*Refs: 97, 104 */
 
 
 //Sound
-function setBackgroundSound(){          /*Refs: 409 */
+function setBackgroundSound(){        
     const confirm = document.querySelector(".confirm")
 
     soundConfirmBtns.forEach(item =>{
@@ -180,24 +184,26 @@ function setBackgroundSound(){          /*Refs: 409 */
     })
 }
 
-function turnSoundOn(){         /*Refs: 169, 195 */
+function turnSoundOn(){         
     soundIsOn = true
     innerWidth < 800? knob.style.animationName = "knobRight": knob.style.animationName = "knobRight2"
+    state2.innerText ="on"
 }
-function turnSoundOff(){        /*Refs: 169, 195 */
+function turnSoundOff(){        
     soundIsOn = false
     innerWidth < 800? knob.style.animationName = "knobLeft": knob.style.animationName = "knobLeft2" 
+     state2.innerText ="off"
 }
 
 
-function toggleBackgroundSound (){      /*Refs: 407 */
+function toggleBackgroundSound (){     
     togglebar.onclick=()=>{
         soundIsOn ? turnSoundOff() : turnSoundOn()
         playSound()
     }
 }
 
-function playSound(){       /*Refs: 169, 196*/
+function playSound(){      
     hum.volume = 0.09
     console.log({hum})
     !hum.paused? hum.pause(): hum.play()
@@ -215,7 +221,7 @@ pagesLink.forEach((pageLink, index)=>{
     }
 })
 
-function changePage(direction){         /*Refs: 233, 236 */
+function changePage(direction){      
     const pages = ["#section1","#section2","#section3","#section4"]
     if(direction === "scrolling-down"){
         current < 3 ? current++ : current = 3
@@ -240,23 +246,25 @@ if(scrollDown){
 
 
 //Animating cube
-cube.addEventListener('mouseover',()=>{
-    hoverCube = true
-})
+if(innerWidth  >= 1000){
+    cube.addEventListener('mouseover',()=>{
+        hoverCube = true
+    })
 
-cube.addEventListener('mouseout',()=>{
-    hoverCube = false
-})
+    cube.addEventListener('mouseout',()=>{
+        hoverCube = false
+    })
+}
 
-function animateCube(){         /*Refs: 404 */
+function animateCube(){  
+    let cubeTimeout;      
     setInterval(()=>{
         if(hoverCube == false || hoverCube == undefined ){
             cube.style.animationName = 'rotate2'
-            setTimeout(()=>{
-                cube.style.animation= 'none'
+            cubeTimeout = setTimeout(()=>{
+                cube.style.animationName= ''
+                clearTimeout(cubeTimeout)
             },6000)
-        }else{
-            return
         }
     },15000)
 }
@@ -264,13 +272,13 @@ function animateCube(){         /*Refs: 404 */
 
 
 //General buttons
-function showAbout(){           /*Refs: 405 */
+function showAbout(){          
     aboutBtn.addEventListener('click',()=>{
         showCover()
     })
 }
 
-function buttonHoverAnimation(){        /*Refs: 403 */
+function buttonHoverAnimation(){       
     const animator = document.querySelector('#animator')
     btns.forEach(btn =>{
         btn.addEventListener('mouseenter',(e)=>{
@@ -295,13 +303,14 @@ btns.forEach(btn =>{
         pop.volume = 0.05
         pop.play()
         btn.style.animationName = 'clicked'
-        window.setTimeout(()=>{
+        const btnTimeout = setTimeout(()=>{
             btn.style.animationName = "none"
+            clearTimeout(btnTimeout)
         },300)
     })
 })
 
-function closeModal(){          /*Refs: 408 */
+function closeModal(){       
     const closeBtn = document.querySelector('#close1')
     closeBtn.addEventListener('click',()=>{
         setTimeout(()=>{
@@ -314,7 +323,7 @@ function closeModal(){          /*Refs: 408 */
 //
 
 //Scroll Animations
-function observer(element,func){        /*Refs: 350, 354*/
+function observer(element,func){      
     let height = window.innerHeight
     addEventListener('scroll', function scrollListener(){
         // let top = element.getBoundingClientRect().top
@@ -326,7 +335,7 @@ function observer(element,func){        /*Refs: 350, 354*/
     })
 }
 
-function slideRightEffect(bottom,element,height){       /*Refs: 350 */
+function slideRightEffect(bottom,element,height){    
     if(bottom < (height)){
         element.style.opacity ='1'
         element.style.transform = 'translateX(0px)'
@@ -336,7 +345,7 @@ function slideRightEffect(bottom,element,height){       /*Refs: 350 */
     }
 }
 
-function scaleUpEffect(bottom,element,height){      /*Refs: 354 */
+function scaleUpEffect(bottom,element,height){    
     if(bottom < (height)){
         element.style.opacity ='1'
         element.style.transform = 'scale(1)'
@@ -356,7 +365,7 @@ skills.forEach(skill=>{
 //
 
 //Menu and menubar
-function toggleMenubar(){       /*Refs: 375*/
+function toggleMenubar(){    
     if(!menu.isOpen){
         menu.style.display = "flex"
         menu.isOpen = true
@@ -384,7 +393,7 @@ function menuDotsAnimation(elem1,elem2,elem3,size1,size2){
 
 
 function showCover(){
-    cover.style.display = 'flex'        /*Refs: 269 */
+    cover.style.display = 'flex'       
     body.style.overflowY = 'hidden'
     setTimeout(()=>{
          modal.style.display = 'flex'
@@ -392,7 +401,7 @@ function showCover(){
 }
 
 //Projects data
-function populateProjects(){        /*Refs: 406 */
+function populateProjects(){      
     myProjects.map((project) =>{
         projectss.innerHTML += Project(project)
     })
