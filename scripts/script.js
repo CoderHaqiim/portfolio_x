@@ -378,7 +378,7 @@ function toggleMenubar(){
         menu.style.display = "none"
         menu.isOpen = false
         menuDotsAnimation(dotOne,dotTwo,dotThree,23,23, false)
-        cover2.style.display = 'none':
+        cover2.style.display = 'none';
     }
 }
 
