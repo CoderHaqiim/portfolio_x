@@ -6,6 +6,7 @@ import Project from '../components/projects.js'
 //Accessing elements
 const btns = document.querySelectorAll('button')
 const cover = document.querySelector('#cover')
+const cover2  = document.querySelector('.cover2')
 const modal = document.querySelector('#modal')
 const aboutBtn = document.querySelector("#about")
 const cube = document.querySelector('.cube')
@@ -78,17 +79,17 @@ const myThemes= {
         "--accent": "#2270ca",
         "--accent2":"#76b3f9a5",
         "--footer-color":"#343333",
-        "--menu-color":"#f4f4ef"
+        "--para-color":"#414040"
     },
     dark:{
-        "--light":"#060625",
-        "--light2":"#161634",
+        "--light":"#111111",
+        "--light2":"#191919",
         "--light3":"#5e5e81",
         "--color5":"#ffffffdd",
         "--accent2": "#192b3fe5",
         "--accent": "#4796f0",
-        "--footer-color":"#010110",
-        "--menu-color":"#131343"
+        "--footer-color":"#111111",
+        "--para-color":"#fdfdfd"
     }
 }
 
@@ -222,9 +223,9 @@ pagesLink.forEach((pageLink, index)=>{
 })
 
 function changePage(direction){      
-    const pages = ["#section1","#section2","#section3","#section4"]
+    const pages = ["#section1-link","#section2-link","#section3-link","#section4-link"]
     if(direction === "scrolling-down"){
-        current < 3 ? current++ : current = 3
+        current < 3? current++ : current = 3
     }else{
         current > 0 ? current-- : current = 0
     }
@@ -369,14 +370,14 @@ function toggleMenubar(){
     if(!menu.isOpen){
         menu.style.display = "flex"
         menu.isOpen = true
-        menuDotsAnimation(dotOne,dotTwo,dotThree,"10px","18px")
+        menuDotsAnimation(dotOne,dotTwo,dotThree,11.5,23,true)
+        innerWidth < 800?
+        cover2.style.display = 'none':
+        cover2.style.display = 'flex'
     }else{
         menu.style.display = "none"
         menu.isOpen = false
-
-        innerWidth < 800 ? 
-        menuDotsAnimation(dotOne,dotTwo,dotThree,"6px","6px"):
-        menuDotsAnimation(dotOne,dotTwo,dotThree,"4px","4px")
+        menuDotsAnimation(dotOne,dotTwo,dotThree,23,23, false)
     }
 }
 
@@ -384,10 +385,18 @@ menuBtn.onclick = () =>{
     toggleMenubar()
 }
 
-function menuDotsAnimation(elem1,elem2,elem3,size1,size2){
-    elem1.style.width = size1
-    elem2.style.width = size2
-    elem3.style.width = size1
+function menuDotsAnimation(elem1,elem2,elem3,size1,size2,transform){
+    elem1.style.width = `${size1}px`
+    elem2.style.width = `${size2}px`
+    elem3.style.width = `${size1}px`
+
+    if(transform){
+        elem1.style.transform = `translateX(${-size1/2}px)`
+        elem3.style.transform = `translateX(${size1/2}px)`
+    }else{
+        elem1.style.transform = `translateX(0px)`
+        elem3.style.transform = `translateX(0px)`
+    }
 }
 //
 

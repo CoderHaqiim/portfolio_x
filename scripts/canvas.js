@@ -2,6 +2,10 @@ const canvas = document.querySelector('#myCanvas')
 const ctx = canvas.getContext('2d')
 const plot = document.querySelector('.particles')
 const buttons = document.querySelectorAll('button')
+const links = document.querySelectorAll('a')
+const clickablesArray = [...buttons, ...links]
+let detectBtnsAndLinks = false
+
 canvas.height = innerHeight
 canvas.width = innerWidth
 const particlesArray = []
@@ -28,13 +32,14 @@ window.addEventListener('mousemove',(e)=>{
 
 class Pointer{
     #ctx = ctx;
-    constructor(){
+    constructor(color){
         this.x = mouse.x
         this.y = mouse.y
         this.size = 10
+        this.color = color
     }
     draw(){
-        this.#ctx.strokeStyle = '#000000'
+        this.#ctx.strokeStyle = this.color
         this.#ctx.lineWidth = 2
         this.#ctx.strokeRect(this.x,this.y,this.size,this.size)
     } 
@@ -64,9 +69,16 @@ class Particle {
     }
 }
 
+clickablesArray.forEach(item =>{
+    item.addEventListener('mouseover',()=>{detectBtnsAndLinks = true})
+    item.addEventListener('mouseout',() => {detectBtnsAndLinks = false})
+})
+
 function animate(){
+    let color;
     ctx.clearRect(0,0,canvas.width, canvas.height)
-    let pointer = new Pointer()
+    detectBtnsAndLinks? color = 'transparent' : color = "#000000"
+    let pointer = new Pointer(color)
     pointer.draw()
     requestAnimationFrame(animate)
     handleParticles()
@@ -82,7 +94,6 @@ function handleParticles(){
     }
 }
 animate()
-
 
 
 

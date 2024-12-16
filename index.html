@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/svgs/logo2.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -17,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="portfolio, coderHaqiim, developer's portfolio, web developer, programming, programmer, developer">
     <meta name="description" content="A developer's portfolio">
-    <title>Haqiim | portfolio_x</title>
+    <title class="home-title">Haqiim | portfolio_x</title>
 </head>
 <body>
     <div class="menu">
@@ -83,14 +74,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="setting-item">
-                    <div class="plane1">
-                        <div class="theme-item">paragraph-font-size</div>
-                        <div class="all-items">
-                            
-                        </div>
-                    </div>
-                </div> -->
             </div>
 
             <div class="menu-item">
@@ -105,10 +88,10 @@
             <img src="assets/svgs/play.svg" alt="">
         </a>
         <div id="pagination">
-           <a href="#section1" class="pageid" id="toHome"></a>
-           <a href="#section2" class="pageid" id="toProjects"></a>
-           <a href="#section3" class="pageid" id="toSkills"></a>
-           <a href="#section4" class="pageid" id="toContact"></a>
+           <a href="#section1-link" class="pageid" id="toHome"></a>
+           <a href="#section2-link" class="pageid" id="toProjects"></a>
+           <a href="#section3-link" class="pageid" id="toSkills"></a>
+           <a href="#section4-link" class="pageid" id="toContact"></a>
         </div>
         <a href="" id="scroll-down" class="scroll-cl">
             <img src="assets/svgs/play.svg" alt="">
@@ -118,8 +101,8 @@
         <div class="confirm">
             <p>This site offers background music for better experience.<br> You can turn it off anytime in the menu.</p>
             <div class="confirm-btns">
-                <button class="tune-toggle" id="yes">Yes</button>
-                <button class="tune-toggle" id="no">No</button>
+                <button class="tune-toggle btn" id="yes">Yes</button>
+                <button class="tune-toggle btn" id="no">No</button>
             </div>
         </div>
         <div id="loadAnim"></div>
@@ -131,15 +114,16 @@
     <audio id="hum" src="assets/melancholic.mp3"></audio>
 
     <canvas id="myCanvas"></canvas>
+    <div class="cover2"></div>
     <div id="cover">
         <div class="codal"></div>
         <div id="modal">
-            <button id = "close1" class="close">
+            <button id = "close1" class="close btn">
                 <img src="assets/svgs/close_icon.svg" alt="">
             </button>
             <div id="personal">
                 <div id="profile_picture">
-                    <img src="assets/images/akeem.jpg" alt="devHQ">
+                    <img src="assets/images/akeem.jpg" alt="coderHQ">
                 </div>
             </div>
             <div id="information">
@@ -166,7 +150,7 @@
     <div id="animator"></div>
     <nav>
         <div id="version">
-            <div id="v">v 1.1.0</div>
+            <div id="v">v 2.0.0</div>
         </div>
         <div class="container">
             <a href="index.html" class="logo" id="main-logo">
@@ -174,29 +158,27 @@
             </a>
             <div class="nav-items">
                 <a href="assets/Jayeola_Abdulhakeem_resume.pdf" target="_blank">
-                    <button class="resume">Resume</button>
+                    <button class="resume btn">Resume</button>
                 </a>
-                <!-- <div id="profile">
-                    <img src="assets/images/akeem.jpg" alt="profilephoto">
-                </div> -->
-                <div class="menu-btn">
+                <button class="menu-btn">
                     <div class="menu-dot" id="dot-one"></div>
                     <div class="menu-dot" id="dot-two"></div>
                     <div class="menu-dot" id="dot-three"></div>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
     <main>
         <section id="section1">
             <div id="background"></div>
+            <div id="section1-link" class="pagelink"></div>
             <div class="container">
                 <div class="col1_1">
                     <p id="text">
                         <span id="span1">Welcome to my portfolio<span id="excl">!</span>
-                        <p id="text1">I am Haqiim, a <span id="bold">frontend developer</span> showcasing my works and journey through creativity</p>
+                        <p id="text1">Hi, I am <strong>Haqiim</strong>, a <span id="bold">frontend developer</span> showcasing my works and journey through creativity.</p>
                     </p>
-                    <button id="about">About me</button>
+                    <button class="btn" id="about">About me</button>
                 </div>
                 <div class="col2_1">
                     <div class="plot">
@@ -226,6 +208,7 @@
         </section>
         <section id="section2">
             <div class="container">
+                <div id="section2-link" class="pagelink"></div>
                 <header>
                     <div class="header">
                         <h1  class="headers" id="header1">Projects</h1>
@@ -233,12 +216,15 @@
                             <span class="num">01</span>
                         </div>
                     </div>
-                    <p class="hd">Here are a variety of cool projects I have worked on.</p>
+                    <p class="hd">Here are some cool projects I have worked on.</p>
                 </header>
-                <div class="projects"> </div>
+                <div class="pro">
+                    <div class="projects"> </div>
+                </div>
         </section>
         <section id="section3">
             <div class="container">
+                <div id="section3-link" class="pagelink"></div>
                 <header>
                     <div class="header">
                         <h1  class="headers" id="header2">My toolbox</h1>
@@ -273,7 +259,7 @@
                                 </li>
                                 <li class="skill">
                                     <span class="icons">
-                                        <img src="assets/svgs/html_x.svg" alt="html_icon">
+                                        <img src="assets/svgs/bootstrap_x.svg" alt="html_icon">
                                     </span>
                                     <span>Bootstrap</span>
                                 </li>
@@ -376,6 +362,7 @@
         </section>
         <section id="section4">
             <div class="container">
+                <div id="section4-link" class="pagelink"></div>
                 <header>
                     <div class="header">
                         <h1 class="headers" id="header3">Get in touch</h1>
@@ -383,7 +370,7 @@
                             <span class="num">03</span>
                         </div>
                     </div>
-                    <p>Kindly leave me a message in the form below.</p>
+                    <p class="hd">Kindly leave me a message in the form below.</p>
                 </header>
                 <div class="contact">
                     <form name="contactform" method="POST" netlify>
@@ -404,7 +391,7 @@
                             <textarea name="message" placeholder="Hello Haqiim" id="message" cols="30" rows="10" required> </textarea>
                         </div>
                         <div id="submit_btn">
-                            <button type="submit" id="submit">
+                            <button class="btn" id="submit" id="submit">
                                 <span>send</span>
                             </button>
                         </div>
@@ -412,7 +399,7 @@
                     
                     <div id="socials-content">
                         <h2 id="hero">
-                            <span>Let's be friends</span>
+                            <span>Social accounts</span>
                             <span id="handshake">
                                 <img src="assets/svgs/handshake.svg" alt="">
                             </span>
@@ -472,8 +459,8 @@
     <footer>
         <div class="container">
             <div id="swap">
-                <span id="tag">devHQ | portfolio_x v0.0.1</span>
-                <span>&copy; 2024 Jaye Haqiim</span>
+                <span id="tag">devHQ | portfolio_x v2.0.0</span>
+                <span>&copy; 2025 Jaye Haqiim</span>
             </div>
             <span>designed and developed by Jaye Haqiim</span>
         </div>

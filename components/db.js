@@ -60,7 +60,7 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/e-commerce.png',
-        liveUrl:'https://easyshopapp.netlify.app/',
+        liveUrl:'https://myeasyshop.netlify.app',
         githubUrl:'https://github.com/CoderHaqiim/e-commerce-website',
         id: 2
     },

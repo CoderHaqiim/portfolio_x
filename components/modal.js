@@ -1,4 +1,5 @@
 const body = document.getElementsByTagName('body')[0]
+
 function Modal2(id,myProjects,skillMap){
     function closeModal(){
         const modal2 = document.querySelector('.modal2')
@@ -9,6 +10,11 @@ function Modal2(id,myProjects,skillMap){
                 cover.style.display = 'none'
             },200)
         }
+
+        const pop = new Audio()
+        pop.src = "assets/pop.mp3"
+        pop.volume = 0.05
+        pop.play()
     }
 
     function removeLoadingAnimation(){
@@ -21,7 +27,7 @@ function Modal2(id,myProjects,skillMap){
 
     return(
         `<div class="modal2">
-            <button onclick = "closeModal()" class="close">
+            <button onclick = "closeModal()" class="close btn">
                 <img src="assets/svgs/close_icon.svg" alt="close button">
             </button>
             <div class="content">
