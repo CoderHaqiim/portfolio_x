@@ -14,6 +14,25 @@ const projects = [
             }
         ],
         imgUrl:'assets/images/player.png',
+        liveUrl:'https://haqiim-taskmaster.netlify.app/',
+        githubUrl:'https://github.com/CoderHaqiim/player_x',
+        id: 5
+    },
+    {
+        name:'music player app',
+        description:'A music player application built with Html, Css and javascript. Application has basic media player functionalities including playing modes and shuffle.',
+        technologies:[
+            {
+                name: 'html', img:'assets/svgs/html_x.svg'
+            },
+            {
+                name:'css', img:'assets/svgs/css_x.svg'
+            },
+            {
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
+            }
+        ],
+        imgUrl:'assets/images/player.png',
         liveUrl:'https://haqiim-player-x.netlify.app/',
         githubUrl:'https://github.com/CoderHaqiim/player_x',
         id: 0
@@ -101,25 +120,6 @@ const projects = [
         liveUrl:'https://wetube-youtube-clone.netlify.app/',
         githubUrl:'https://github.com/CoderHaqiim/we_tube',
         id: 4
-    },
-    {
-        name:'project 6',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit Molestias tenetur ullam nemo',
-        technologies:[
-            {
-                name: 'html', img:'assets/svgs/html_x.svg'
-            },
-            {
-                name:'css', img:'assets/svgs/css_x.svg'
-            },
-            {
-                name:"javascript", img:'assets/svgs/javascript_x.svg'
-            }
-        ],
-        imgUrl:'',
-        liveUrl:'',
-        githubUrl:'',
-        id: 5
     }
 ]
 
