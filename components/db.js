@@ -24,7 +24,7 @@ const projects = [
         ],
         imgUrl:'assets/images/task-master.png',
         liveUrl:'https://haqiim-taskmaster.netlify.app/',
-        githubUrl:'https://github.com/CoderHaqiim/player_x',
+        githubUrl:'https://github.com/CoderHaqiim/task-manager',
         id:0
     },
     {
