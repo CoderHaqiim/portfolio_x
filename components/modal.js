@@ -57,7 +57,7 @@ function Modal2(id,myProjects,skillMap){
                 </div>
                 <div class="links">
                     <a class="link" href=${myProjects[id].githubUrl}>github</a>
-                    <a class="link" href=${myProjects[id].liveUrl}>live</a>
+                    <a class="link" target="_blank" href=${myProjects[id].liveUrl}>live</a>
                 </div>
             </div>
         </div>`
