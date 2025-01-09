@@ -584,18 +584,21 @@ header{
     pointer-events: none;
 }
 .project1::after{
-    content:'music player'
+    content:'task-master'
 }
 .project2::after{
-    content:'space_tourism'
+    content:'music-player'
 }
 .project3::after{
-    content:'e commerce website'
+    content:'space tourism'
 }
 .project4::after{
-    content:'portfolio-x'
+    content:'easy-shop'
 }
 .project5::after{
+    content:'portfolio-x'
+}
+.project6::after{
     content:'wetube'
 }
 
