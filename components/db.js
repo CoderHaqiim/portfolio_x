@@ -1,7 +1,7 @@
 const projects = [
     {
         name:'task-master',
-        description:`A multi-user task management application. Application can create, edit and delete tasks. It also recommends tasks based on priority and due date.<br><br> Use:<br>email-<em><strong>pseudo.mail@gmail.com</strong></em>;<br>password-<em><strong>Pseudo111</strong></em>.`,
+        description:`A multi-user task management application. Application can create, edit and delete tasks. It also recommends tasks based on priority and due date.<br><br> Use:<br>email-<em><strong>pseudo.mail@gmail.com</strong></em> <br>password-<em><strong>Pseudo111.</strong></em>`,
         technologies:[
             {
                 name: 'html', img:'assets/svgs/html_x.svg'
