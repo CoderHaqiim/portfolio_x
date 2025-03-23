@@ -587,18 +587,21 @@ header{
     content:'task-master'
 }
 .project2::after{
-    content:'music-player'
+    content:'countries app'
 }
 .project3::after{
-    content:'space tourism'
+    content:'music-player'
 }
 .project4::after{
-    content:'easy-shop'
+    content:'space tourism'
 }
 .project5::after{
-    content:'portfolio-x'
+    content:'easy-shop'
 }
 .project6::after{
+    content:'portfolio-x'
+}
+.project7::after{
     content:'wetube'
 }
 

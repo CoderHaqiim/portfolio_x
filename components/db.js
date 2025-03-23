@@ -28,6 +28,25 @@ const projects = [
         id:0
     },
     {
+        name:'countries app',
+        description:`A website that shows the various countries and some information about them. This site makes use of the REST countries api`,
+        technologies:[
+            {
+                name: 'nextjs', img:'assets/svgs/react_x.svg'
+            },
+            {
+                name:'tailwind', img:'assets/svgs/tailwind_x.svg'
+            },
+            {
+                name:"javascript", img:'assets/svgs/javascript_x.svg'
+            }
+        ],
+        imgUrl:'assets/images/countries.png',
+        liveUrl:'https://haqiim-countries-list.netlify.app/',
+        githubUrl:'https://github.com/CoderHaqiim/country-view',
+        id:1
+    },
+    {
         name:'music player app',
         description:'A music player application built with Html, Css and javascript. Application has basic media player functionalities including playing modes and shuffle.',
         technologies:[
@@ -44,7 +63,7 @@ const projects = [
         imgUrl:'assets/images/player.png',
         liveUrl:'https://haqiim-player-x.netlify.app/',
         githubUrl:'https://github.com/CoderHaqiim/player_x',
-        id: 1
+        id: 2
     },
     {
         name:'space tourism website',
@@ -64,7 +83,7 @@ const projects = [
         imgUrl:'assets/images/space_tourism.png',
         liveUrl:'https://haqiim-space-tourism.netlify.app/',
         githubUrl:'https://github.com/CoderHaqiim/space-tourism',
-        id:2
+        id:3
     },
     {
         name:'easyshop',
@@ -90,7 +109,7 @@ const projects = [
         imgUrl:'assets/images/e-commerce.png',
         liveUrl:'https://myeasyshop.netlify.app',
         githubUrl:'https://github.com/CoderHaqiim/e-commerce-website',
-        id: 3
+        id: 4
     },
     {
         name:'portfolio_x',
@@ -109,7 +128,7 @@ const projects = [
         imgUrl:'assets/images/portfolio.png',
         liveUrl:'https://haqiim-portfolio-x.netlify.app',
         githubUrl:'https://github.com/CoderHaqiim/portfolio_x',
-        id: 4
+        id: 5
     },
     {
         name:'wetube',
@@ -128,7 +147,7 @@ const projects = [
         imgUrl:'assets/images/wetube.png',
         liveUrl:'https://wetube-youtube-clone.netlify.app/',
         githubUrl:'https://github.com/CoderHaqiim/we_tube',
-        id: 5
+        id: 6
     }
 ]
 
